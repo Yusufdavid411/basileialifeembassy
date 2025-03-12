@@ -1,0 +1,124 @@
+/* ..........ImageCarousel.......... */
+
+
+.carousel {
+    position: relative;
+    width: 80%;
+    height: 190px;
+    overflow: hidden;
+    margin: auto;
+    display: flex;
+    background-color: white;
+}
+  
+.carousel-container {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+  
+.carousel-image {
+    flex-shrink: 0;
+    /* border-radius: 8px; */
+    /* padding: 0 2px; */
+    width: 100%;
+}
+  
+.prev-button, .next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* ..........Overlay ImageCarousel.......... */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.overlay-container {
+    width: 80%;
+}
+
+.modal-content .img-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 8px;
+    display: flex;
+}
+
+.modal-content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.modal-content img {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 80vw;
+    max-height: 80vh;
+    transition: transform 0.3s ease;
+    pointer-events: none;
+}
+  
+.modal-prev-button, .modal-next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    cursor: pointer;
+    padding: 7px;
+}
+
+.modal-prev-button:hover, .modal-next-button:hover {
+    background: black;
+}
+  
+.modal-prev-button { left: 10px; }
+.modal-next-button { right: 10px; }
+  
+.modal-buttons {
+    display: flex;
+    gap: 1.2rem;
+    justify-content: flex-end;
+    margin: 20px 25px;
+}
+  
+.modal-buttons button, .modal-buttons a {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+  
+.modal-buttons .icon {
+    width: 24px;
+    height: 24px;
+    color: white;
+}
+
+.modal-buttons .icon:hover {
+    color: green;
+}

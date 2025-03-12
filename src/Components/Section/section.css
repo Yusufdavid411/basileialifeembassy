@@ -1,0 +1,29 @@
+/* src/components/Section1.css */
+.section1 {
+    position: relative;
+    width: 100vw;
+    /* height: 100vh; */
+    background-image: url("/img/flyer1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Keeps background in place */
+  }
+  
+  .section1-content {
+    position: relative;
+    z-index: -1;
+    color: black;
+    text-align: center;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.894);
+  }
+
+  .section1-content2 {
+    position: relative;
+    z-index: -1;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.894);
+  }
+  

@@ -1,0 +1,143 @@
+header{
+    color: var(--text-color);
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 10px 0px 10px 3px; */
+    background-color: white;
+}
+
+
+/* ..........Logo.......... */
+
+/* .logo {
+    width: 50%;
+    margin: 0 2px 0 15px;
+}
+
+.logo img {
+    width: 80%;
+} */
+
+
+
+/* ..........Navbar.......... */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    color: black;
+    z-index: 1;
+  }
+  
+  /* Hamburger Menu Button */
+  .menu-icon {
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  /* Full-Screen Mobile Menu */
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: left 0.5s ease-in-out;
+  }
+  
+  /* Show Menu */
+  .mobile-menu.open {
+    left: 0;
+    z-index: 1;
+  }
+  
+  /* Close Button Inside Menu */
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Menu Items */
+  .mobile-menu ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+  }
+  
+  .mobile-menu ul li {
+    margin: 20px 0;
+  }
+  
+  .mobile-menu ul li a {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+  
+  .mobile-menu ul li a:hover {
+    color: #ffcc00;
+  }
+
+.tablet-menu {
+  display: none;
+}
+
+
+
+
+
+
+@media (min-width:700px) {
+
+  /* ..........Logo.......... */
+
+  .logo{
+    width: 50%;
+    margin: 10px 2px 10px 20px;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .tablet-menu {
+    display: flex;
+  }
+
+  /* Menu Items */
+  .tablet-menu ul {
+    list-style: none;
+    text-align: center;
+    padding: 0 8px;
+    display: flex;
+    white-space: nowrap;
+  }
+  
+  .tablet-menu ul li {
+    margin: 20px 0;
+  }
+  
+  .tablet-menu ul li a {
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+  
+  .tablet-menu ul li a:hover {
+    color: #ffcc00;
+  }
+}
