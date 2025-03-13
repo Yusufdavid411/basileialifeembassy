@@ -52,7 +52,7 @@ const Image = () => {
   const goToPrevSlide = () => setCurrentIndex((prev) => prev - 1);
 
   useEffect(() => {
-    autoSlideRef.current = setInterval(goToPrevSlide, delay);
+    autoSlideRef.current = setInterval(goToNextSlide, delay);
     return () => clearInterval(autoSlideRef.current);
   }, []);
 
