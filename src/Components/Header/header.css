@@ -32,7 +32,6 @@ header{
   align-items: center;
   padding: 15px 20px;
   color: black;
-  z-index: 10;
 }
 
 /* Hamburger Menu Button */
@@ -48,7 +47,7 @@ header{
   left: -100%;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -59,7 +58,7 @@ header{
 /* Show Menu */
 .mobile-menu.open {
   left: 0;
-  z-index: 1;
+  z-index: 10;
 }
 
 /* Close Button Inside Menu */
@@ -68,14 +67,14 @@ header{
   top: 20px;
   right: 30px;
   font-size: 2rem;
-  color: white;
+  color: black;
   cursor: pointer;
 }
 
 /* Menu Items */
 .mobile-menu ul {
   list-style: none;
-  text-align: center;
+  /* text-align: center; */
   padding: 0;
 }
 
@@ -84,13 +83,14 @@ header{
 }
 
 .mobile-menu ul li a {
-  color: white;
+  color: black;
   font-size: 1.5rem;
+  font-weight: 600;
   text-decoration: none;
 }
 
 .mobile-menu ul li a:hover {
-  color: #ffcc00;
+  color: #3f0805;
 }
 
 .tablet-menu {
@@ -156,12 +156,12 @@ header{
 }
 
 .tablet-menu ul li a {
-  color: white;
+  color: black;
   font-size: 1rem;
   text-decoration: none;
 }
 
 .tablet-menu ul li a:hover {
-  color: #ffcc00;
+  color: #3f0805;
 }
 }
