@@ -9,11 +9,13 @@
     margin: auto;
     display: flex;
     background-color: white;
+    z-index: 0;
 }
   
 .carousel-container {
     display: flex;
     transition: transform 1s ease-in-out;
+    z-index: 0;
 }
   
 .carousel-image {
